@@ -9,15 +9,16 @@ const MainHeader: NextPage = () => {
     <header className={classes.header}>
       <div className={classes.logo}>
         <Link href="/" passHref>
-          <a>
-            <Image
-              src="/images/logo.png"
-              alt="Element Coffee Roasters Logo"
-              width="160"
-              height="160"
-              priority
-            />
-          </a>
+            <a>
+              <Image
+                src="/images/logo.png"
+                alt="Element Coffee Roasters Logo"
+                width="500"
+                height="750"
+                objectFit="cover"
+                priority
+              />
+            </a>
         </Link>
       </div>
       <nav className={classes.navigation}>
