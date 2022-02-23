@@ -10,10 +10,17 @@
 }
 
 .logo {
-  width: 7rem;
-  height: 7rem;
+  position: relative;
 }
 
+.logoImage {
+  width: 10px;
+  height: 10px;
+}
+
+.logo a {
+  background-color: red;
+}
 
 .navigation ul {
   list-style: none;
