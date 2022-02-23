@@ -11,11 +11,8 @@
 
 .logo {
   position: relative;
-}
-
-.logoImage {
-  width: 10px;
-  height: 10px;
+  width: 100px;
+  height: 100%;
 }
 
 .logo a {
@@ -48,11 +45,6 @@
 }
 
 @media (min-width: 768px) {
-  .logo {
-    width: 10rem;
-    height: 10rem;
-  }
-
   .navigation a {
     font-size: 1.2rem;
   }
