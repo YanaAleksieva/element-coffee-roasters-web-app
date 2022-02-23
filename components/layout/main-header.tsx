@@ -11,7 +11,6 @@ const MainHeader: NextPage = () => {
         <Link href="/" passHref>
           <a>
             <Image
-              className={classes.logoImage}
               src="/images/logo.png"
               alt="Element Coffee Roasters Logo"
               objectFit="cover"
