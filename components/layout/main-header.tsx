@@ -28,6 +28,9 @@ const MainHeader: NextPage = () => {
           <li>
             <Link href="/about">ЗА НАС</Link>
           </li>
+          <li>
+            <Link href="/order">ПОРЪЧАЙ</Link>
+          </li>
         </ul>
       </nav>
     </header>
