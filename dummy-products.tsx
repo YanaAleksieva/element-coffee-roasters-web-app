@@ -43,6 +43,63 @@ const DUMMY_PRODUCTS = [
     image: "images/ethiopia-photo.png",
     price: "11лв",
   },
+  
+  {
+    id: "p4",
+    name: "Ethiopia4",
+    origin: "Sidamo",
+    altitude: "1500-2200м",
+    varietal: "Heirloom",
+    process: "Washed",
+    flavourProfile: "Цветен. Лимонов тарт. Горски плодове.",
+    description:
+      "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
+    quantity: "200гр",
+    image: "images/ethiopia-photo.png",
+    price: "11лв",
+  },
+  {
+    id: "p5",
+    name: "Ethiopia5",
+    origin: "Sidamo",
+    altitude: "1500-2200м",
+    varietal: "Heirloom",
+    process: "Washed",
+    flavourProfile: "Цветен. Лимонов тарт. Горски плодове.",
+    description:
+      "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
+    quantity: "200гр",
+    image: "images/ethiopia-photo.png",
+    price: "11лв",
+  },
+  {
+    id: "p6",
+    name: "Ethiopia6",
+    origin: "Sidamo",
+    altitude: "1500-2200м",
+    varietal: "Heirloom",
+    process: "Washed",
+    flavourProfile: "Цветен. Лимонов тарт. Горски плодове.",
+    description:
+      "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
+    quantity: "200гр",
+    image: "images/ethiopia-photo.png",
+    price: "11лв",
+  },
+  {
+    id: "p7",
+    name: "Ethiopia7",
+    origin: "Sidamo",
+    altitude: "1500-2200м",
+    varietal: "Heirloom",
+    process: "Washed",
+    flavourProfile: "Цветен. Лимонов тарт. Горски плодове.",
+    description:
+      "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
+    quantity: "200гр",
+    image: "images/ethiopia-photo.png",
+    price: "11лв",
+  },
 ];
 
 /*

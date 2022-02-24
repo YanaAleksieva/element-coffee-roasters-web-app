@@ -36,27 +36,29 @@ const ProductItem = (props: Product) => {
 
   return (
     <li className={classes.item}>
-      <div className={classes.itemImg}>
-        <Image
-          src={"/" + image}
-          alt={name}
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-      </div>
-      <div className={classes.content}>
-        <div className={classes.summary}>
-          <h2>{name}</h2>
-          <div className={classes.origin}>
-            <h3>{origin}</h3>
-          </div>
-          <div className={classes.flavor}>
-            <h5>{flavourProfile}</h5>
-          </div>
+      <div className={classes.gridItem}>
+        <div className={classes.itemImg}>
+          <Image
+            src={"/" + image}
+            alt={name}
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
         </div>
-        <div className={classes.actions}>
-          <Link href={exploreLink}>Детайли за продукта</Link>
+        <div className={classes.content}>
+          <div className={classes.summary}>
+            <h3>{name}</h3>
+            <div className={classes.origin}>
+              <h5>{origin}</h5>
+            </div>
+            <div className={classes.flavor}>
+              <h5>{flavourProfile}</h5>
+            </div>
+          </div>
+          <div className={classes.actions}>
+            <Link href={exploreLink}>Детайли за продукта</Link>
+          </div>
         </div>
       </div>
     </li>
