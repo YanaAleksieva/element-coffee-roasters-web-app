@@ -12,7 +12,7 @@ const ProductSpec = () => {
               src="/images/single-origin-white.png"
               alt="Sinle Origin Coffees"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
             />
           </div>
           <p className={classes.specText}>SINGLE ORIGIN COFFEE</p>
@@ -23,7 +23,7 @@ const ProductSpec = () => {
               src="/images/roaster-icon-white-less.png"
               alt="Freshly Roasted in Stara Zagora"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
             />
           </div>
           <p className={classes.specText}>ПРЯСНО ИЗПЕЧЕНО В СТАРА ЗАГОРА</p>
@@ -34,7 +34,7 @@ const ProductSpec = () => {
               src="/images/fast-delivery-bg-white.png"
               alt="Delivery in Bularia"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
             />
           </div>
           <p className={classes.specText}>ДОСТАВКА В ЦЯЛА БЪЛГАРИЯ</p>
@@ -45,7 +45,7 @@ const ProductSpec = () => {
               src="/images/package-white.png"
               alt="Packages in customer's wanted quantity"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
             />
           </div>
           <p className={classes.specText}>РАЗЛИЧНИ ГРАМАЖИ ПАКЕТИ</p>
