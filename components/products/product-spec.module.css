@@ -1,0 +1,32 @@
+.container {
+  padding: 0;
+  text-align: center;
+}
+
+.icon {
+  height: 70px;
+  width: 60px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.iconRow {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.specText {
+  color: white;
+}
+
+
