@@ -1,5 +1,7 @@
 import ProductItem from "./product-item";
 
+import classes from "./product-list.module.css";
+
 type Product = {
   id: string;
   name: string;
@@ -40,7 +42,7 @@ const ProductList = (props: ListProps) => {
   const { items } = props;
 
   return (
-    <ul>
+    <ul className={classes.list}>
       {items.map((product: Product) => (
         <ProductItem
           key={product.id}

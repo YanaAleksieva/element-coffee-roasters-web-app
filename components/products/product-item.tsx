@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import classes from "./product-item.module.css";
+
 type Product = {
   id: string;
   name: string;
@@ -33,29 +35,28 @@ const ProductItem = (props: Product) => {
   const exploreLink = `/products/${id}`;
 
   return (
-    <li>
-      <div>
+    <li className={classes.item}>
+      <div className={classes.itemImg}>
         <Image
           src={"/" + image}
           alt={name}
-          width="50"
-          height="50"
+          layout="fill"
           objectFit="cover"
           priority
         />
       </div>
-      <div>
-        <div>
+      <div className={classes.content}>
+        <div className={classes.summary}>
           <h2>{name}</h2>
-          <div>
+          <div className={classes.origin}>
             <h3>{origin}</h3>
           </div>
-          <div>
+          <div className={classes.flavor}>
             <h5>{flavourProfile}</h5>
           </div>
         </div>
-        <div>
-          <Link href={exploreLink}>Explore product</Link>
+        <div className={classes.actions}>
+          <Link href={exploreLink}>Детайли за продукта</Link>
         </div>
       </div>
     </li>
