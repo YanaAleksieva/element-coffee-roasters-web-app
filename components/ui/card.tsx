@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 import classes from "./card.module.css";
 
 type CardProps = {

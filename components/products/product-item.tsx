@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import classes from "./product-item.module.css";
 import Card from "../ui/Card";
+import Button from "../ui/button";
 
 type Product = {
   id: string;
@@ -37,7 +38,7 @@ const ProductItem = (props: Product) => {
 
   return (
     <li className={classes.item}>
-      <Card>
+      <div className={classes.card}>
         <div className={classes.itemImg}>
           <Image
             src={"/" + image}
@@ -58,10 +59,11 @@ const ProductItem = (props: Product) => {
             </div>
           </div>
           <div className={classes.actions}>
-            <Link href={exploreLink}>Детайли за продукта</Link>
+            {/*<Link href={exploreLink}>Детайли за продукта</Link> */}
+            <Button link={exploreLink}>Детайли за продукта</Button>
           </div>
         </div>
-      </Card>
+      </div>
     </li>
   );
 };
