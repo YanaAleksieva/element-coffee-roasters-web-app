@@ -1,8 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 
 import classes from "./product-item.module.css";
-import Card from "../ui/Card";
 import Button from "../ui/button";
 
 type Product = {
@@ -38,7 +36,7 @@ const ProductItem = (props: Product) => {
 
   return (
     <li className={classes.item}>
-      <div className={classes.card}>
+      <div className={classes.wrapper}>
         <div className={classes.itemImg}>
           <Image
             src={"/" + image}

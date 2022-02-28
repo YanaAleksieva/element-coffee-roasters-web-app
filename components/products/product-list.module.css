@@ -1,21 +1,15 @@
 .list {
- /* width: 90%;
+  /* width: 90%;
   max-width: 40rem;
-  margin: 5rem auto; */
+  margin: 5rem auto;
+  min-width: 40%;
+  justify-content: space-around;
+  padding: 10px;
+  */
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 5rem;
   width: 90%;
-  min-width: 40%;
-  padding: 10px;
   margin: 0 auto;
-  justify-content: space-around;
 }
 
-@media (max-width: 768px) {
-  .list {
-    flex-direction: row;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-}
