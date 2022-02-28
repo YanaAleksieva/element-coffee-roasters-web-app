@@ -9,7 +9,7 @@ const ProductSpec = () => {
         <div className={classes.iconItem}>
           <div className={classes.icon}>
             <Image
-              src="/images/single-origin-white.png"
+              src="/images/single-origin-black.png"
               alt="Sinle Origin Coffees"
               layout="fill"
               objectFit="contain"
@@ -20,7 +20,7 @@ const ProductSpec = () => {
         <div className={classes.iconItem}>
           <div className={classes.icon}>
             <Image
-              src="/images/roaster-icon-white-less.png"
+              src="/images/roaster-icon-black-less.png"
               alt="Freshly Roasted in Stara Zagora"
               layout="fill"
               objectFit="contain"
@@ -31,7 +31,7 @@ const ProductSpec = () => {
         <div className={classes.iconItem}>
           <div className={classes.icon}>
             <Image
-              src="/images/fast-delivery-bg-white.png"
+              src="/images/fast-delivery-bg-black.png"
               alt="Delivery in Bularia"
               layout="fill"
               objectFit="contain"
@@ -42,7 +42,7 @@ const ProductSpec = () => {
         <div className={classes.iconItem}>
           <div className={classes.icon}>
             <Image
-              src="/images/package-white.png"
+              src="/images/package-black.png"
               alt="Packages in customer's wanted quantity"
               layout="fill"
               objectFit="contain"
