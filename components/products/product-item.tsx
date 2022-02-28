@@ -49,15 +49,14 @@ const ProductItem = (props: Product) => {
         <div className={classes.content}>
           <div className={classes.summary}>
             <h3>{name}</h3>
-            <div className={classes.origin}>
-              <h5>{origin}</h5>
+            <div>
+              <h4>{origin}</h4>
             </div>
-            <div className={classes.flavor}>
+            <div>
               <h5>{flavourProfile}</h5>
             </div>
           </div>
           <div className={classes.actions}>
-            {/*<Link href={exploreLink}>Детайли за продукта</Link> */}
             <Button link={exploreLink}>Детайли за продукта</Button>
           </div>
         </div>
