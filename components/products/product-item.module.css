@@ -1,0 +1,51 @@
+.item {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 25%;
+  min-width: 268px;
+}
+
+.itemImg {
+  position: relative;
+  width: inherit;
+  height: 60%;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.content h4, 
+.content h5 {
+  color: white;
+  margin: 1rem;
+}
+
+.content h3 {
+  align-items: center;
+  background-color: #f2c800;
+  color: black;
+  padding: 5px;
+  margin: 0;
+}
+
+.actions {
+  padding: 2rem;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .item {
+    justify-content: center;
+  }
+}
