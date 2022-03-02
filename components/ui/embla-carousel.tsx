@@ -20,6 +20,11 @@ const EmblaCarousel = (props: Carousel) => {
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<Array<number>>([]);
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+
+  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
 
   const scrollTo = useCallback(
     (index) => embla && embla.scrollTo(index),
@@ -28,6 +33,8 @@ const EmblaCarousel = (props: Carousel) => {
 
   const onSelect = useCallback(() => {
     if (!embla) return;
+    setPrevBtnEnabled(embla.canScrollPrev());
+    setNextBtnEnabled(embla.canScrollNext());
     setSelectedIndex(embla.selectedScrollSnap());
   }, [embla, setSelectedIndex]);
 
@@ -70,6 +77,8 @@ const EmblaCarousel = (props: Carousel) => {
         selectedIndex={selectedIndex}
         scrollTo={scrollTo}
       />
+      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
     </div>
   );
 };
