@@ -5,6 +5,7 @@ import { mediaByIndex } from "../../public/images/carousel";
 import Image from "next/image";
 
 import classes from "./embla-carousel.module.css";
+import EmblaCarouselDots from "./embla-carousel-dots";
 
 type Carousel = {
   slides: number[];
@@ -13,23 +14,29 @@ type Carousel = {
 const EmblaCarousel = (props: Carousel) => {
   const { slides } = props;
 
-  const [viewportRef, embla] = useEmblaCarousel({ loop: false });
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+  const [viewportRef, embla] = useEmblaCarousel({
+    align: "center",
+    skipSnaps: false,
+  });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [scrollSnaps, setScrollSnaps] = useState<Array<number>>([]);
 
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  const scrollTo = useCallback(
+    (index) => embla && embla.scrollTo(index),
+    [embla]
+  );
+
   const onSelect = useCallback(() => {
     if (!embla) return;
-    setPrevBtnEnabled(embla.canScrollPrev());
-    setNextBtnEnabled(embla.canScrollNext());
-  }, [embla]);
+    setSelectedIndex(embla.selectedScrollSnap());
+  }, [embla, setSelectedIndex]);
 
   useEffect(() => {
     if (!embla) return;
-    embla.on("select", onSelect);
     onSelect();
-  }, [embla, onSelect]);
+    setScrollSnaps(embla.scrollSnapList());
+    embla.on("select", onSelect);
+  }, [embla, setScrollSnaps, onSelect]);
 
   return (
     <div className={classes.embla}>
@@ -51,8 +58,11 @@ const EmblaCarousel = (props: Carousel) => {
           ))}
         </div>
       </div>
-      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+      <EmblaCarouselDots
+        scrollSnaps={scrollSnaps}
+        selectedIndex={selectedIndex}
+        scrollTo={scrollTo}
+      />
     </div>
   );
 };
