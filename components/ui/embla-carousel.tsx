@@ -53,6 +53,13 @@ const EmblaCarousel = (props: Carousel) => {
                   objectFit="cover"
                   priority
                 />
+                <div className={classes.embla__slide__text}>
+                  <p>
+                    Изключително кафе, прясно изпечено и доставено до вашата
+                    врата
+                  </p>
+                  <h2>Кафе пекарна в Стара Загора</h2>
+                </div>
               </div>
             </div>
           ))}
