@@ -38,7 +38,10 @@
 .header a:active,
 .header a.active {
   color: #b99c06;
-  border-bottom: 1px solid #e8e9eb;
+}
+
+.active {
+  border-bottom: 1px solid #b99c06;
 }
 
 @media (max-width: 768px) {

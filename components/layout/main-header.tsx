@@ -3,8 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 import classes from "./main-header.module.css";
+import { useRouter } from "next/router";
 
 const MainHeader: NextPage = () => {
+  const router = useRouter();
+
   return (
     <header className={classes.header}>
       <div className={classes.logo}>
@@ -22,13 +25,21 @@ const MainHeader: NextPage = () => {
       </div>
       <nav className={classes.navigation}>
         <ul>
-          <li>
+          <li
+            className={`${
+              router.pathname == "/products" ? classes.active : ""
+            }`}
+          >
             <Link href="/products">ПРОДУКТИ</Link>
           </li>
-          <li>
+          <li
+            className={`${router.pathname == "/about" ? classes.active : ""}`}
+          >
             <Link href="/about">ЗА НАС</Link>
           </li>
-          <li>
+          <li
+            className={`${router.pathname == "/order" ? classes.active : ""}`}
+          >
             <Link href="/order">ПОРЪЧАЙ</Link>
           </li>
         </ul>
