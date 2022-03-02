@@ -4,11 +4,31 @@
   margin-top: -40px;
   position: relative;
 }
-.embla__dots {
+.embla__dots__active {
   cursor: pointer;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   margin: 3px;
   box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  background-color: #f2c800;
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.embla__dots {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  margin: 3px;
+  border: 3px solid #8d7604;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+}
+
+@keyframes jump {
+  50% {
+    margin-top: -2px;
+  }
 }

@@ -13,11 +13,8 @@ const EmblaCarouselDots = (props: Dots) => {
     <div className={classes.embla__navigator}>
       {scrollSnaps.map((_, index) => (
         <div
-          className={classes.embla__dots}
+          className={`${selectedIndex === index ? classes.embla__dots__active : classes.embla__dots}`}
           key={index}
-          style={{
-            backgroundColor: selectedIndex === index ? "#f2c800" : "#8d7604",
-          }}
           onClick={() => scrollTo(index)}
         />
       ))}
