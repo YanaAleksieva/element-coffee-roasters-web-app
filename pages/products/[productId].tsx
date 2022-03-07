@@ -10,7 +10,7 @@ import { getProductById } from "../../dummy-products";
 const ProductDetailPage: NextPage = () => {
   const router = useRouter();
 
-  const productId: any = router.query.productId;
+  const productId = typeof router.query.productId === 'string' ? router.query.productId : ""; // temporary workaround - NEED TO LOOK FOR BETTER SOLUTION
   const product = getProductById(productId);
 
   if (!product) {
@@ -26,10 +26,14 @@ const ProductDetailPage: NextPage = () => {
         origin={product.origin}
         flavourProfile={product.flavourProfile}
         image={product.imageDetail}
-        imageAlt={product.name}
+        altitude={product.altitude}
+        varietal={product.varietal}
+        process={product.process}
       />
       <ProductContent>
         <p>{product.description}</p>
+        <p>{product.quantity}</p>
+        <p>{product.price}</p>
       </ProductContent>
     </Fragment>
   );

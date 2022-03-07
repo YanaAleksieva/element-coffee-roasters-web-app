@@ -9,9 +9,11 @@ type Product = {
   id: string;
   name: string;
   origin: string;
+  altitude: string;
+  varietal: string;
+  process: string;
   flavourProfile: string;
   image: string;
-  imageAlt: string;
 };
 
 function ProductLogistics(props: Product) {
@@ -19,9 +21,11 @@ function ProductLogistics(props: Product) {
     id,
     name,
     origin,
+    altitude,
+    varietal,
+    process,
     flavourProfile,
     image,
-    imageAlt,
   } = props;
 
   return (
@@ -29,18 +33,27 @@ function ProductLogistics(props: Product) {
       <div className={classes.image}>
         <Image
           src={`/${image}`}
-          alt={imageAlt}
+          alt={name}
           layout="fill"
           objectFit="cover"
           priority
         />
       </div>
       <ul className={classes.list}>
+        <LogisticsItem icon={OriginIcon}>
+          <p>{origin}</p>
+        </LogisticsItem>
         <LogisticsItem icon={FlavourIcon}>
           <p>{flavourProfile}</p>
         </LogisticsItem>
-        <LogisticsItem icon={OriginIcon}>
-          <p>{origin}</p>
+        <LogisticsItem icon={FlavourIcon}>
+          <p>{altitude}</p>
+        </LogisticsItem>
+        <LogisticsItem icon={FlavourIcon}>
+          <p>{varietal}</p>
+        </LogisticsItem>
+        <LogisticsItem icon={FlavourIcon}>
+          <p>{process}</p>
         </LogisticsItem>
       </ul>
     </section>
