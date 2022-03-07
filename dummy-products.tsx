@@ -12,7 +12,8 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     price: "11лв",
     image: "images/coffee-package-basic.png",
-   // location: "Africa",
+    imageDetail: "images/ethiopia-photo.png",
+    // location: "Africa",
   },
   {
     id: "p2",
@@ -27,6 +28,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11лв",
+    imageDetail: "images/ethiopia-photo.png",
   },
 
   {
@@ -42,8 +44,9 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11лв",
+    imageDetail: "images/ethiopia-photo.png",
   },
-  
+
   {
     id: "p4",
     name: "Ethiopia4",
@@ -57,6 +60,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11лв",
+    imageDetail: "images/ethiopia-photo.png",
   },
   {
     id: "p5",
@@ -71,6 +75,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11лв",
+    imageDetail: "images/ethiopia-photo.png",
   },
   {
     id: "p6",
@@ -85,6 +90,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11лв",
+    imageDetail: "images/ethiopia-photo.png",
   },
   {
     id: "p7",
@@ -99,6 +105,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11лв",
+    imageDetail: "images/ethiopia-photo.png",
   },
 ];
 
