@@ -1,12 +1,12 @@
 .summary {
   width: 100%;
-  height: 30vh;
-  background-image: linear-gradient(to bottom left,  #008b79, #1180a1);
+  height: 150px;
+  background-image: linear-gradient(to bottom right,  #b99c06, #67cbde);
 }
 
 .summary h1 {
   margin: 0;
-  padding-top: 3rem;
+  padding-top: auto;
   font-size: 2rem;
   text-align: center;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);

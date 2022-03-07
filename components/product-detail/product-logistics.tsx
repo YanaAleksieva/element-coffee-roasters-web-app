@@ -30,9 +30,8 @@ function ProductLogistics(props: Product) {
         <Image
           src={`/${image}`}
           alt={imageAlt}
-          width={500}
-          height={500}
-          objectFit="contain"
+          layout="fill"
+          objectFit="cover"
           priority
         />
       </div>

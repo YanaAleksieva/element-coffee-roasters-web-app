@@ -7,12 +7,12 @@ type logisticsItemProps = {
 };
 
 function LogisticsItem(props: logisticsItemProps) {
-  const { icon: Test } = props;
+  const { icon: Icon } = props;
 
   return (
     <li className={classes.item}>
       <span className={classes.icon}>
-        <Test />
+        <Icon />
       </span>
       <span className={classes.content}>{props.children}</span>
     </li>
