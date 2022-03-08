@@ -10,7 +10,8 @@ import { getProductById } from "../../dummy-products";
 const ProductDetailPage: NextPage = () => {
   const router = useRouter();
 
-  const productId = typeof router.query.productId === 'string' ? router.query.productId : ""; // temporary workaround - NEED TO LOOK FOR BETTER SOLUTION
+  const productId =
+    typeof router.query.productId === "string" ? router.query.productId : ""; // temporary workaround - NEED TO LOOK FOR BETTER SOLUTION
   const product = getProductById(productId);
 
   if (!product) {
@@ -19,12 +20,16 @@ const ProductDetailPage: NextPage = () => {
 
   return (
     <Fragment>
-      <ProductSummary title={product.name} />
+      <ProductSummary
+        title={product.name}
+        flavourProfile={product.flavourProfile}
+        price={product.price}
+        qty={product.quantity}
+      />
       <ProductLogistics
         id={product.id}
         name={product.name}
         origin={product.origin}
-        flavourProfile={product.flavourProfile}
         image={product.imageDetail}
         altitude={product.altitude}
         varietal={product.varietal}
@@ -32,8 +37,6 @@ const ProductDetailPage: NextPage = () => {
       />
       <ProductContent>
         <p>{product.description}</p>
-        <p>{product.quantity}</p>
-        <p>{product.price}</p>
       </ProductContent>
     </Fragment>
   );

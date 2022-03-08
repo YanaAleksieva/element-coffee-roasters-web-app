@@ -12,7 +12,6 @@ type Product = {
   altitude: string;
   varietal: string;
   process: string;
-  flavourProfile: string;
   image: string;
 };
 
@@ -24,7 +23,6 @@ function ProductLogistics(props: Product) {
     altitude,
     varietal,
     process,
-    flavourProfile,
     image,
   } = props;
 
@@ -42,9 +40,6 @@ function ProductLogistics(props: Product) {
       <ul className={classes.list}>
         <LogisticsItem icon={OriginIcon}>
           <p>{origin}</p>
-        </LogisticsItem>
-        <LogisticsItem icon={FlavourIcon}>
-          <p>{flavourProfile}</p>
         </LogisticsItem>
         <LogisticsItem icon={FlavourIcon}>
           <p>{altitude}</p>
