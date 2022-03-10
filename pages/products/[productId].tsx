@@ -6,12 +6,8 @@ import ProductSummary from "../../components/product-detail/product-summary";
 import ProductLogistics from "../../components/product-detail/product-logistics";
 import ProductContent from "../../components/product-detail/product-content";
 import { getProductById } from "../../dummy-products";
-import ProductLogisticsGrinding from "../../components/product-detail/product-logistics-grinding";
 
 const ProductDetailPage: NextPage = () => {
-  const ICON_COUNT = 7;
-
-  const icons = Array.from(Array(ICON_COUNT).keys());
   const router = useRouter();
 
   const productId =
@@ -27,22 +23,17 @@ const ProductDetailPage: NextPage = () => {
       <ProductSummary
         title={product.name}
         flavourProfile={product.flavourProfile}
-        price={product.price}
-        qty={product.quantity}
-      />
-      <ProductLogistics
         id={product.id}
-        name={product.name}
         origin={product.origin}
         image={product.imageDetail}
         altitude={product.altitude}
         varietal={product.varietal}
         process={product.process}
       />
+      <ProductLogistics price={product.price} qty={product.quantity} />
       <ProductContent>
         <p>{product.description}</p>
       </ProductContent>
-      <ProductLogisticsGrinding icons={icons} />
     </Fragment>
   );
 };

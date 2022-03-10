@@ -1,54 +1,24 @@
-import Image from "next/image";
-
 import OriginIcon from "../icons/origin-icon";
 import FlavourIcon from "../icons/flavour-icon";
 import LogisticsItem from "./logistics-item";
 import classes from "./product-logistics.module.css";
 
 type Product = {
-  id: string;
-  name: string;
-  origin: string;
-  altitude: string;
-  varietal: string;
-  process: string;
-  image: string;
+  price: string;
+  qty: string;
 };
 
 function ProductLogistics(props: Product) {
-  const {
-    id,
-    name,
-    origin,
-    altitude,
-    varietal,
-    process,
-    image,
-  } = props;
+  const { price, qty } = props;
 
   return (
     <section className={classes.logistics}>
-      <div className={classes.image}>
-        <Image
-          src={`/${image}`}
-          alt={name}
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-      </div>
       <ul className={classes.list}>
         <LogisticsItem icon={OriginIcon}>
-          <p>{origin}</p>
+          <p>{price}</p>
         </LogisticsItem>
         <LogisticsItem icon={FlavourIcon}>
-          <p>{altitude}</p>
-        </LogisticsItem>
-        <LogisticsItem icon={FlavourIcon}>
-          <p>{varietal}</p>
-        </LogisticsItem>
-        <LogisticsItem icon={FlavourIcon}>
-          <p>{process}</p>
+          <p>{qty}</p>
         </LogisticsItem>
       </ul>
     </section>

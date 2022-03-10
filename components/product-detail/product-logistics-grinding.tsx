@@ -8,7 +8,6 @@ type IconSet = {
 };
 
 const ProductLogisticsGrinding = (props: IconSet) => {
-  const source = "/images/grinding-icons/aeropress.png";
 
   const { icons } = props;
 
