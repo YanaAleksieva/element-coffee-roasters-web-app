@@ -5,7 +5,6 @@
   background-color: black;
   */
   padding: 2rem;
-  width: 80%;
   margin: -3rem auto;
   display: flex;
   justify-content: space-between;
@@ -14,24 +13,11 @@
   align-items: center;
 }
 
-.image {
-  /*
-  border-radius: 50%;
-  border: 5px solid black;
-  */
-  position: relative;
-  width: 10rem;
-  height: 15rem;
-  overflow: hidden;
-}
-
 .list {
-  flex: 3;
   display: flex;
   gap: 2rem;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .logistics p {

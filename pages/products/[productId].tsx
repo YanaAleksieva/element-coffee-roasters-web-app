@@ -29,11 +29,10 @@ const ProductDetailPage: NextPage = () => {
         altitude={product.altitude}
         varietal={product.varietal}
         process={product.process}
+        price={product.price}
+        qty={product.quantity}
       />
-      <ProductLogistics price={product.price} qty={product.quantity} />
-      <ProductContent>
-        <p>{product.description}</p>
-      </ProductContent>
+      <ProductContent description={product.description} />
     </Fragment>
   );
 };

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProductLogisticsGrinding from "../../components/product-detail/product-logistics-grinding";
+import ProductLogistics from "../../components/product-detail/product-logistics";
 
 import classes from "./product-summary.module.css";
 
@@ -12,6 +13,8 @@ type Product = {
   varietal: string;
   process: string;
   image: string;
+  price: string;
+  qty: string;
 };
 
 function ProductSummary(props: Product) {
@@ -24,6 +27,8 @@ function ProductSummary(props: Product) {
     varietal,
     process,
     image,
+    price,
+    qty
   } = props;
 
   const ICON_COUNT = 7;
@@ -45,6 +50,7 @@ function ProductSummary(props: Product) {
           <h2>{title}</h2>
           <h3>{flavourProfile}</h3>
         </div>
+        <ProductLogistics price={price} qty={qty} />
         <div className={classes.summary__spec}>
           <p>Origin: {origin}</p>
           <p>Altitude: {altitude}</p>

@@ -1,8 +1,45 @@
 .content {
   font-size: 1rem;
   color: #3a3a3a;
+  padding: 2rem;
   width: 80%;
   margin: auto;
-  margin-top: 4rem;
-  text-align: center;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1080px) {
+  .content__text {
+    padding-top: 2rem;
+    border-top: 2px solid #b99c06;
+  }
+}
+
+@media (min-width: 1080px) {
+  .content {
+    padding: 2rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .content__text {
+    padding-left: 2rem;
+    border-left: 2px solid #b99c06;
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 2080px) {
+  .content {
+    width: 50%;
+    justify-content: space-evenly;
+    gap: 5rem;
+  }
+
+  .content__text {
+    padding-left: 2rem;
+    border-left: 2px solid #b99c06;
+  }
 }

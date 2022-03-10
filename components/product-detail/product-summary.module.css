@@ -44,7 +44,8 @@
 }
 
 .summary__basic_info {
-  margin-bottom: 2rem;
+  border-bottom: 2px solid #b99c06;
+  padding-bottom: 2rem;
 }
 
 .summary__spec {
