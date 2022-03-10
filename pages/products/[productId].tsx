@@ -3,7 +3,6 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 import ProductSummary from "../../components/product-detail/product-summary";
-import ProductLogistics from "../../components/product-detail/product-logistics";
 import ProductContent from "../../components/product-detail/product-content";
 import { getProductById } from "../../dummy-products";
 

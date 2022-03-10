@@ -28,7 +28,7 @@ function ProductLogistics(props: Product) {
           <option value="5">1 кг.</option>
         </select>
       </div>
-      <p>{priceCoffee} лв.</p>
+      <p className={classes.product__price}>{priceCoffee} лв.</p>
     </section>
   );
 }

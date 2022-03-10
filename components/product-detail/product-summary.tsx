@@ -50,10 +50,26 @@ function ProductSummary(props: Product) {
         </div>
         <ProductLogistics price={price} />
         <div className={classes.summary__spec}>
-          <p>Origin: {origin}</p>
-          <p>Altitude: {altitude}</p>
-          <p>Varietal: {varietal}</p>
-          <p>Process: {process}</p>
+          <div className={classes.summary__spec_item}>
+            <h4>Произход: </h4>
+            <p>{title}</p>
+          </div>
+          <div className={classes.summary__spec_item}>
+            <h4>Регион: </h4>
+            <p>{origin}</p>
+          </div>
+          <div className={classes.summary__spec_item}>
+            <h4>Височина: </h4>
+            <p>{altitude}</p>
+          </div>
+          <div className={classes.summary__spec_item}>
+            <h4>Сорт: </h4>
+            <p>{varietal}</p>
+          </div>
+          <div className={classes.summary__spec_item}>
+            <h4>Процес: </h4>
+            <p>{process}</p>
+          </div>
         </div>
         <ProductLogisticsGrinding icons={icons} />
       </div>
