@@ -1,7 +1,9 @@
 .logistics {
+  /*
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   background-color: black;
+  */
   padding: 2rem;
   width: 80%;
   margin: -3rem auto;
@@ -13,12 +15,14 @@
 }
 
 .image {
+  /*
+  border-radius: 50%;
+  border: 5px solid black;
+  */
   position: relative;
   width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+  height: 15rem;
   overflow: hidden;
-  border: 5px solid white;
 }
 
 .list {
@@ -31,7 +35,7 @@
 }
 
 .logistics p {
-  color: white;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -45,6 +49,6 @@
 
   .image {
     width: 20rem;
-    height: 20rem;
+    height: 30rem;
   }
 }
