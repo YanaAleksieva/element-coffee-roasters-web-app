@@ -14,7 +14,6 @@ type Product = {
   process: string;
   image: string;
   price: string;
-  qty: string;
 };
 
 function ProductSummary(props: Product) {
@@ -28,7 +27,6 @@ function ProductSummary(props: Product) {
     process,
     image,
     price,
-    qty
   } = props;
 
   const ICON_COUNT = 7;
@@ -50,7 +48,7 @@ function ProductSummary(props: Product) {
           <h2>{title}</h2>
           <h3>{flavourProfile}</h3>
         </div>
-        <ProductLogistics price={price} qty={qty} />
+        <ProductLogistics price={price} />
         <div className={classes.summary__spec}>
           <p>Origin: {origin}</p>
           <p>Altitude: {altitude}</p>

@@ -30,7 +30,6 @@ const ProductDetailPage: NextPage = () => {
         varietal={product.varietal}
         process={product.process}
         price={product.price}
-        qty={product.quantity}
       />
       <ProductContent description={product.description} />
     </Fragment>

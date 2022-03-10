@@ -10,7 +10,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
-    price: "11лв",
+    price: "11",
     image: "images/coffee-package-basic.png",
     imageDetail: "images/ethiopia-photo.png",
     // location: "Africa",
@@ -27,7 +27,7 @@ const DUMMY_PRODUCTS = [
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
-    price: "11лв",
+    price: "11",
     imageDetail: "images/ethiopia-photo.png",
   },
 
@@ -43,7 +43,7 @@ const DUMMY_PRODUCTS = [
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
-    price: "11лв",
+    price: "11",
     imageDetail: "images/ethiopia-photo.png",
   },
 
@@ -59,7 +59,7 @@ const DUMMY_PRODUCTS = [
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
-    price: "11лв",
+    price: "11",
     imageDetail: "images/ethiopia-photo.png",
   },
   {
@@ -74,7 +74,7 @@ const DUMMY_PRODUCTS = [
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
-    price: "11лв",
+    price: "11",
     imageDetail: "images/ethiopia-photo.png",
   },
   {
@@ -89,7 +89,7 @@ const DUMMY_PRODUCTS = [
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
-    price: "11лв",
+    price: "11",
     imageDetail: "images/ethiopia-photo.png",
   },
   {
@@ -104,7 +104,7 @@ const DUMMY_PRODUCTS = [
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
-    price: "11лв",
+    price: "11",
     imageDetail: "images/ethiopia-photo.png",
   },
 ];

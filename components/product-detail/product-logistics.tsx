@@ -1,26 +1,34 @@
-import OriginIcon from "../icons/origin-icon";
-import FlavourIcon from "../icons/flavour-icon";
-import LogisticsItem from "./logistics-item";
 import classes from "./product-logistics.module.css";
+import React, { useState } from "react";
 
 type Product = {
   price: string;
-  qty: string;
 };
 
 function ProductLogistics(props: Product) {
-  const { price, qty } = props;
+  const { price} = props;
+  const [priceCoffee, setPriceCoffee] = useState(price);
+
+  const priceHandler = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const multiplier = event.target.value;
+    const calculatedPrice = (+multiplier * +price).toString();
+
+    setPriceCoffee(calculatedPrice);
+  }
 
   return (
     <section className={classes.logistics}>
-      <ul className={classes.list}>
-        <LogisticsItem icon={OriginIcon}>
-          <p>{price}</p>
-        </LogisticsItem>
-        <LogisticsItem icon={FlavourIcon}>
-          <p>{qty}</p>
-        </LogisticsItem>
-      </ul>
+      <div className={classes.dropdown}>
+        <select className={classes.product__form} name="coffee-qty" id="qty" onChange={priceHandler}>
+          <option value="1">
+            200 гр.
+          </option>
+          <option value="1.25">250 гр.</option>
+          <option value="2.5">500 гр.</option>
+          <option value="5">1 кг.</option>
+        </select>
+      </div>
+      <p>{priceCoffee} лв.</p>
     </section>
   );
 }
