@@ -6,8 +6,12 @@ import ProductSummary from "../../components/product-detail/product-summary";
 import ProductLogistics from "../../components/product-detail/product-logistics";
 import ProductContent from "../../components/product-detail/product-content";
 import { getProductById } from "../../dummy-products";
+import ProductLogisticsGrinding from "../../components/product-detail/product-logistics-grinding";
 
 const ProductDetailPage: NextPage = () => {
+  const ICON_COUNT = 7;
+
+  const icons = Array.from(Array(ICON_COUNT).keys());
   const router = useRouter();
 
   const productId =
@@ -38,6 +42,7 @@ const ProductDetailPage: NextPage = () => {
       <ProductContent>
         <p>{product.description}</p>
       </ProductContent>
+      <ProductLogisticsGrinding icons={icons} />
     </Fragment>
   );
 };

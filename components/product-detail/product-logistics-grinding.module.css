@@ -1,0 +1,18 @@
+.grinding__info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  border-top: 2px solid #b99c06;
+  border-bottom: 2px solid #b99c06;
+}
+
+.grinding__slide {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.p {
+  font-size: 3rem;
+}
