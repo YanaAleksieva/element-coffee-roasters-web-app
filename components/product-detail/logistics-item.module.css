@@ -3,7 +3,7 @@
   font-size: 1.5rem;
   flex-direction: row;
   align-items: center;
-  color: #aefff8;
+  color: var(--lighter-blue);
 }
 
 .item span {
@@ -12,14 +12,13 @@
 
 .icon {
   margin-right: 1rem;
-  color: #f2c800;
+  color: var(--lighter-yellow);
 }
 
 .icon svg {
   width: 2rem;
   height: 2rem;
 }
-
 
 @media (min-width: 768px) {
   .item {

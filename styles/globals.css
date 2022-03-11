@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-background: rgb(219, 219, 219);
+  --primary-yellow: #b99c06;
+  --lighter-yellow: #f2c800;
+  --darker-yellow: #8d7604;
+  --lighter-blue: #aefff8;
+}
+
 html,
 body {
   margin: 0;
@@ -13,7 +21,7 @@ body {
   font-style: normal;
   font-weight: 600;
   color: #414141;
-  background-color: rgb(252, 248, 194);
+  background-color: var(--primary-background);
   line-height: 1.5;
 }
 

@@ -29,13 +29,13 @@
 }
 
 .summary__basic_info {
-  border-bottom: 2px solid #b99c06;
+  border-bottom: 2px solid var(--primary-yellow);
   padding-bottom: 2rem;
 }
 
 .summary__spec {
-  border-top: 2px solid #b99c06;
-  border-bottom: 2px solid #b99c06;
+  border-top: 2px solid var(--primary-yellow);
+  border-bottom: 2px solid var(--primary-yellow);
   margin: 0 auto;
 }
 

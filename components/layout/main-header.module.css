@@ -6,7 +6,7 @@
   justify-content: space-between;
   background-color: #131212;
   padding: 1rem 10%;
-  border-bottom: 5px solid #b99c06;
+  border-bottom: 5px solid var(--primary-yellow);
 }
 
 .logo {
@@ -37,11 +37,11 @@
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: #b99c06;
+  color: var(--primary-yellow);
 }
 
 .active {
-  border-bottom: 1px solid #b99c06;
+  border-bottom: 1px solid var(--primary-yellow);
 }
 
 @media (max-width: 768px) {

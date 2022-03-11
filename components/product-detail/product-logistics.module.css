@@ -15,8 +15,8 @@
   width: 100%;
   padding: 1rem;
   cursor: pointer;
-  border: 2px solid #8d7604;
-  background-color: rgb(252, 248, 194);
+  border: 2px solid var(--darker-yellow);
+  background-color: var(--primary-background);
   font-size: 1rem;
 }
 
@@ -26,7 +26,7 @@
 
 .product__form:hover {
   background-color: black;
-  color: rgb(252, 248, 194);
+  color: var(--primary-background);
 }
 
 @media (min-width: 768px) {
