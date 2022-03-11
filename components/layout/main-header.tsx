@@ -31,7 +31,11 @@ const MainHeader: NextPage = () => {
           </a>
         </Link>
       </div>
-      <nav className={classes.navigation}>
+      <nav
+        className={`${
+          hamburgerOpen ? classes.hamburgerNavigation : classes.navigation
+        }`}
+      >
         <ul>
           <li
             className={`${

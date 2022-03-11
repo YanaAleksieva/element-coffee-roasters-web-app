@@ -18,9 +18,10 @@
 
 .burger1Rotate {
     transform: rotate(45deg);
+    background-color: var(--primary-yellow);
 }
 
-.burger1 {
+.burgerNoRotate {
     transform: rotate(0);
 }
 
@@ -36,8 +37,5 @@
 
 .burger3Rotate {
     transform: rotate(-45deg);
-}
-
-.burger3 {
-    transform: rotate(0);
+    background-color: var(--primary-yellow);
 }

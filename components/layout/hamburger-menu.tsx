@@ -13,7 +13,7 @@ const HamburgerMenu = (props: Hamburger) => {
         className={`${
           isOpen
             ? `${classes.burger} ${classes.burger1Rotate}`
-            : `${classes.burger} ${classes.burger1}`
+            : `${classes.burger} ${classes.burgerNoRotate}`
         }`}
       />
       <div
@@ -27,7 +27,7 @@ const HamburgerMenu = (props: Hamburger) => {
         className={`${
           isOpen
             ? `${classes.burger} ${classes.burger3Rotate}`
-            : `${classes.burger} ${classes.burger3}`
+            : `${classes.burger} ${classes.burgerNoRotate}`
         }`}
       />
     </div>
