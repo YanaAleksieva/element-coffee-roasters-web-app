@@ -12,7 +12,7 @@
   height: 30px;
   justify-content: center;
   align-items: center;
-  fill: #f2c800;
+  fill: var(--lighter-yellow);
   padding: 0;
 }
 
