@@ -36,6 +36,7 @@ const MainHeader: NextPage = () => {
           hamburgerOpen ? classes.hamburgerNavigation : classes.navigation
         }`}
       >
+
         <ul>
           <li
             className={`${
@@ -55,10 +56,10 @@ const MainHeader: NextPage = () => {
             <Link href="/order">ПОРЪЧАЙ</Link>
           </li>
         </ul>
-        <div className={classes.hamburger} onClick={toggleHamburgerHandler}>
-          <HamburgerMenu isOpen={hamburgerOpen} />
-        </div>
       </nav>
+      <div className={classes.hamburger} onClick={toggleHamburgerHandler}>
+          <HamburgerMenu isOpen={hamburgerOpen} />
+      </div>
     </header>
   );
 };
