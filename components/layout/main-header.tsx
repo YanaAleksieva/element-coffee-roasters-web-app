@@ -1,12 +1,20 @@
 import type { NextPage } from "next";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 import classes from "./main-header.module.css";
 import { useRouter } from "next/router";
+import HamburgerMenu from "./hamburger-menu";
 
 const MainHeader: NextPage = () => {
   const router = useRouter();
+
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburgerHandler = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
 
   return (
     <header className={classes.header}>
@@ -43,6 +51,9 @@ const MainHeader: NextPage = () => {
             <Link href="/order">ПОРЪЧАЙ</Link>
           </li>
         </ul>
+        <div className={classes.hamburger} onClick={toggleHamburgerHandler}>
+          <HamburgerMenu isOpen={hamburgerOpen} />
+        </div>
       </nav>
     </header>
   );

@@ -44,6 +44,10 @@
   border-bottom: 1px solid var(--primary-yellow);
 }
 
+.hamburger {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 80px;
@@ -51,5 +55,18 @@
   }
   .navigation a {
     font-size: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: flex-end;
+  }
+  .navigation ul {
+    display: none;
+    background-color: blue;
+    height: 100vh;
+    width: 50vw;
+    margin-top: 50px;
+    position: fixed;
   }
 }
