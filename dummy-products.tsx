@@ -140,7 +140,7 @@ const DUMMY_PRODUCTS = [
   {
     id: "p10",
     name: "Sumatra",
-    origin: "Mandheling Organic; Wahana estate, Aceh distr.",
+    origin: "Mandheling Organic; Wahana estate",
     altitude: "1250-1400м",
     varietal: "Catimor. Bourbon",
     process: "Sami-Washed",
