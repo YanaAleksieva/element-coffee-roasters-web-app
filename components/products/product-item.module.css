@@ -4,7 +4,6 @@
   flex-direction: column;
   height: 640px;
   width: 320px;
-  background: red;
 }
 
 .itemImg {
@@ -34,6 +33,10 @@
   color: black;
   padding: 5px;
   margin: 0;
+}
+
+.spacer {
+  flex-grow: 1;
 }
 
 .actions {
