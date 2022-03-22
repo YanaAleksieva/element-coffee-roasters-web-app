@@ -39,6 +39,7 @@
 .actions {
   padding: 2rem;
   text-align: center;
+  justify-self: flex-end;
 }
 
 

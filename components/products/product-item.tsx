@@ -55,6 +55,7 @@ const ProductItem = (props: Product) => {
             <h5>{flavourProfile}</h5>
           </div>
         </div>
+        <div style={{ flexGrow: 1 }}></div>
         <div className={classes.actions}>
           <Button link={exploreLink}>Детайли за продукта</Button>
         </div>
