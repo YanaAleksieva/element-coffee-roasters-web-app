@@ -10,12 +10,15 @@ import HeaderLinks from "./header-links";
 
 const MainHeader: NextPage = () => {
   const router = useRouter();
+  const currentPath = router.pathname;
 
+  /*
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleHamburgerHandler = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
+  */
 
   return (
     <header className={classes.header}>
@@ -35,8 +38,10 @@ const MainHeader: NextPage = () => {
       <nav className={classes.navigation}>
         <HeaderLinks />
       </nav>
-      <div className={classes.hamburger} onClick={toggleHamburgerHandler}>
-        <HamburgerMenu isClosed={hamburgerOpen} />
+      <div className={classes.hamburger}>
+        {currentPath === "/menu"
+          ? <HamburgerMenu isOpen={true} />
+          : <HamburgerMenu isOpen={false} />}
       </div>
     </header>
   );

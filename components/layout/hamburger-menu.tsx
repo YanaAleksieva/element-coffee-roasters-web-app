@@ -3,13 +3,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 type Hamburger = {
-  isClosed: boolean;
+  isOpen: boolean;
 };
 
 const HamburgerMenu = (props: Hamburger) => {
-  const { isClosed } = props;
+  let { isOpen } = props;
   const router = useRouter();
-/*
+
+  /*
   const hamMenu = (
     <div className={classes.hamburger}>
       <div
@@ -37,7 +38,7 @@ const HamburgerMenu = (props: Hamburger) => {
   );
 */
 
-  if (!isClosed) {
+  if (!isOpen) {
     return (
       <Link href="/menu" passHref>
         <div className={classes.hamburger}>
@@ -49,11 +50,7 @@ const HamburgerMenu = (props: Hamburger) => {
     );
   } else {
     return (
-      <button
-        className={classes.btn}
-        type="button"
-        onClick={() => router.back()}
-      >
+      <button className={classes.btn} type="button" onClick={() => router.back()}>
         <div className={classes.hamburger}>
           <div className={`${`${classes.burger} ${classes.burger1Rotate}`}`} />
           <div className={`${`${classes.burger} ${classes.burger2Rotate}`}`} />
