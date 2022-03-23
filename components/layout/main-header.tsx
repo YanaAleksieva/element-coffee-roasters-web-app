@@ -32,11 +32,7 @@ const MainHeader: NextPage = () => {
           </a>
         </Link>
       </div>
-      <nav
-        className={`${
-          hamburgerOpen ? classes.hamburgerNavigation : classes.navigation
-        }`}
-      >
+      <nav className={classes.navigation}>
         <HeaderLinks />
       </nav>
       <div className={classes.hamburger} onClick={toggleHamburgerHandler}>
