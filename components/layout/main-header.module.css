@@ -45,10 +45,6 @@
   color: black;
 }
 
-.active {
-  border-bottom: 1px solid var(--primary-yellow);
-}
-
 .hamburger {
   display: none;
 }
