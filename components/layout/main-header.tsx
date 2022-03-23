@@ -1,24 +1,16 @@
 import type { NextPage } from "next";
-import { useState } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
 import classes from "./main-header.module.css";
-import { useRouter } from "next/router";
+
 import HamburgerMenu from "./hamburger-menu";
 import HeaderLinks from "./header-links";
 
 const MainHeader: NextPage = () => {
   const router = useRouter();
   const currentPath = router.pathname;
-
-  /*
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-  const toggleHamburgerHandler = () => {
-    setHamburgerOpen(!hamburgerOpen);
-  };
-  */
 
   return (
     <header className={classes.header}>

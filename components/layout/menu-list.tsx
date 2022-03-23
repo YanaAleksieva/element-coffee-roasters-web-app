@@ -1,5 +1,4 @@
 import HeaderLinks from "./header-links";
-import HamburgerMenu from "./hamburger-menu";
 
 import classes from "./menu-list.module.css";
 
