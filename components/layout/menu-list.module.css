@@ -1,0 +1,34 @@
+.main {
+  height: 80vh;
+  margin: 4rem auto;
+  max-width: 30rem;
+}
+
+.main ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-background);
+}
+
+.main li {
+  margin: 10px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.main a {
+  display: block;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.main a:hover,
+.main a:active {
+  color: var(--primary-yellow);
+}
