@@ -36,7 +36,7 @@ const MainHeader: NextPage = () => {
         <HeaderLinks />
       </nav>
       <div className={classes.hamburger} onClick={toggleHamburgerHandler}>
-        <HamburgerMenu isOpen={hamburgerOpen} />
+        <HamburgerMenu isClosed={hamburgerOpen} />
       </div>
     </header>
   );
