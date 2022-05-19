@@ -1,12 +1,16 @@
 import type { NextPage } from "next";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
 import classes from "./main-header.module.css";
-import { useRouter } from "next/router";
+
+import HamburgerMenu from "./hamburger-menu";
+import HeaderLinks from "./header-links";
 
 const MainHeader: NextPage = () => {
   const router = useRouter();
+  const currentPath = router.pathname;
 
   return (
     <header className={classes.header}>
@@ -24,26 +28,13 @@ const MainHeader: NextPage = () => {
         </Link>
       </div>
       <nav className={classes.navigation}>
-        <ul>
-          <li
-            className={`${
-              router.pathname == "/products" ? classes.active : ""
-            }`}
-          >
-            <Link href="/products">ПРОДУКТИ</Link>
-          </li>
-          <li
-            className={`${router.pathname == "/about" ? classes.active : ""}`}
-          >
-            <Link href="/about">ЗА НАС</Link>
-          </li>
-          <li
-            className={`${router.pathname == "/order" ? classes.active : ""}`}
-          >
-            <Link href="/order">ПОРЪЧАЙ</Link>
-          </li>
-        </ul>
+        <HeaderLinks />
       </nav>
+      <div className={classes.hamburger}>
+        {currentPath === "/menu"
+          ? <HamburgerMenu isOpen={true} />
+          : <HamburgerMenu isOpen={false} />}
+      </div>
     </header>
   );
 };
