@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import ProductSummary from "../../components/product-detail/product-summary";
 import ProductContent from "../../components/product-detail/product-content";
 import { getProductById } from "../../dummy-products";
+import Head from "next/head";
 
 const ProductDetailPage: NextPage = () => {
   const router = useRouter();
@@ -19,6 +20,10 @@ const ProductDetailPage: NextPage = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Element Coffee Roasters {product.name}</title>
+        <meta name="description" content={product.description} />
+      </Head>
       <ProductSummary
         title={product.name}
         flavourProfile={product.flavourProfile}

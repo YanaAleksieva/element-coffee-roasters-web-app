@@ -1,10 +1,19 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import { Fragment } from "react";
 import DescriptionPage from "../../components/layout/description-page";
 
 const OrderPage: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Element Coffee Roasters ПОРЪЧАЙ</title>
+        <meta
+          name="description"
+          content="За да поръчате кафе от Element Coffee Roasters, моля обадете се на посочения номер или ни посетете в нашия магазин - гр. Стара
+          Загора, ул. Димитър Наумов 70"
+        />
+      </Head>
       <DescriptionPage
         imgUrl={"/images/cover-wider.png"}
         imgAlt={"coffee-shop-photo"}
