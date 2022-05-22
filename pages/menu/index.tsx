@@ -1,6 +1,8 @@
-import type { NextPage } from "next";
-import MenuList from "../../components/layout/menu-list";
 import { motion } from "framer-motion";
+
+import MenuList from "../../components/layout/menu-list";
+
+import type { NextPage } from "next";
 
 const MenuPage: NextPage = () => {
   const variants = {

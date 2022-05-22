@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
-import classes from "./main-header.module.css";
-
 import HamburgerMenu from "./hamburger-menu";
 import HeaderLinks from "./header-links";
+
+import classes from "./main-header.module.css";
 
 const MainHeader: NextPage = () => {
   const router = useRouter();

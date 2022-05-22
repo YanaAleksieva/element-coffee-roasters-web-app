@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import ProductLogisticsGrinding from "../../components/product-detail/product-logistics-grinding";
 import ProductLogistics from "../../components/product-detail/product-logistics";
 

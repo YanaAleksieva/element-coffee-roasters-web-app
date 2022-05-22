@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { Fragment } from "react";
+import Link from "next/link";
+
 import DescriptionPage from "../layout/description-page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -32,7 +33,9 @@ const AboutSummary = () => {
             </p>
           </div>
         </div>
-        <div className={classes.section}>MAPS ADDED HERE</div>
+        {/* MAPS ADDED BELOW */}
+        <div className={classes.section}></div>
+        {/* MAPS ADDED ABOVE */}
       </div>
       <DescriptionPage
         imgUrl={"/images/about-us.JPG"}

@@ -1,8 +1,10 @@
-import type { NextPage } from "next";
-import { getAllProducts } from "../../dummy-products";
+import Head from "next/head";
+
 import ProductList from "../../components/products/product-list";
 import ProductSpec from "../../components/products/product-spec";
-import Head from "next/head";
+import { getAllProducts } from "../../dummy-products";
+
+import type { NextPage } from "next";
 
 const AllProductsPage: NextPage = () => {
   const products = getAllProducts();

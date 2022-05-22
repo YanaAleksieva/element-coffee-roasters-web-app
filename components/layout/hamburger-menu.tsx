@@ -1,6 +1,7 @@
-import classes from "./hamburger-menu.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
+import classes from "./hamburger-menu.module.css";
 
 type Hamburger = {
   isOpen: boolean;

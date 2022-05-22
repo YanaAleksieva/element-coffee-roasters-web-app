@@ -1,5 +1,6 @@
-import classes from "./description-page.module.css";
 import Image from "next/image";
+
+import classes from "./description-page.module.css";
 
 type DescriptionProps = {
   children: React.ReactNode;

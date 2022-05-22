@@ -1,6 +1,6 @@
-import classes from "./footer.module.css";
-
 import Image from "next/image";
+
+import classes from "./footer.module.css";
 
 const Footer = () => {
   return (

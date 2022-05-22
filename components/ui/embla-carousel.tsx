@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { PrevButton, NextButton } from "./embla-carousel-button";
-import useEmblaCarousel from "embla-carousel-react";
-import { mediaByIndex } from "../../public/images/carousel";
 import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+
+import EmblaCarouselDots from "./embla-carousel-dots";
+import { PrevButton, NextButton } from "./embla-carousel-button";
+
+import { mediaByIndex } from "../../public/images/carousel";
 
 import classes from "./embla-carousel.module.css";
-import EmblaCarouselDots from "./embla-carousel-dots";
 
 type Carousel = {
   slides: number[];

@@ -1,7 +1,9 @@
-import type { NextPage } from "next";
-import Head from "next/head";
 import { Fragment } from "react";
+import Head from "next/head";
+
 import DescriptionPage from "../../components/layout/description-page";
+
+import type { NextPage } from "next";
 
 const OrderPage: NextPage = () => {
   return (

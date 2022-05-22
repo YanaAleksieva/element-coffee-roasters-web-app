@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import classes from "./product-item.module.css";
 import Button from "../ui/button";
+
+import classes from "./product-item.module.css";
 
 type Product = {
   id: string;

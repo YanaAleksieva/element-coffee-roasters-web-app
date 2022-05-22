@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { mediaByIndex } from "../../public/images/grinding-icons";
 
 import classes from "./product-logistics-grinding.module.css";
@@ -8,7 +9,6 @@ type IconSet = {
 };
 
 const ProductLogisticsGrinding = (props: IconSet) => {
-
   const { icons } = props;
 
   return (

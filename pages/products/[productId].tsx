@@ -1,11 +1,12 @@
-import type { NextPage } from "next";
-
-import { useRouter } from "next/router";
 import { Fragment } from "react";
+import { useRouter } from "next/router";
+import Head from "next/head";
+
 import ProductSummary from "../../components/product-detail/product-summary";
 import ProductContent from "../../components/product-detail/product-content";
 import { getProductById } from "../../dummy-products";
-import Head from "next/head";
+
+import type { NextPage } from "next";
 
 const ProductDetailPage: NextPage = () => {
   const router = useRouter();

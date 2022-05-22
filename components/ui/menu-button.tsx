@@ -68,7 +68,6 @@ const MenuButton = ({
       preserveAspectRatio="none"
       width={width}
       height={height}
-    
     >
       <motion.line
         x1="0"

@@ -42,24 +42,24 @@ const ProductList = (props: ListProps) => {
   const { items } = props;
 
   return (
-      <ul className={classes.list}>
-        {items.map((product: Product) => (
-          <ProductItem
-            key={product.id}
-            id={product.id}
-            name={product.name}
-            origin={product.origin}
-            altitude={product.altitude}
-            varietal={product.varietal}
-            process={product.process}
-            flavourProfile={product.flavourProfile}
-            description={product.description}
-            quantity={product.quantity}
-            price={product.price}
-            image={product.image}
-          />
-        ))}
-      </ul>
+    <ul className={classes.list}>
+      {items.map((product: Product) => (
+        <ProductItem
+          key={product.id}
+          id={product.id}
+          name={product.name}
+          origin={product.origin}
+          altitude={product.altitude}
+          varietal={product.varietal}
+          process={product.process}
+          flavourProfile={product.flavourProfile}
+          description={product.description}
+          quantity={product.quantity}
+          price={product.price}
+          image={product.image}
+        />
+      ))}
+    </ul>
   );
 };
 

@@ -1,7 +1,9 @@
-import type { NextPage } from "next";
-import Head from "next/head";
 import { Fragment } from "react";
+import Head from "next/head";
+
 import AboutSummary from "../../components/about-details/about-summary";
+
+import type { NextPage } from "next";
 
 const AboutPage: NextPage = () => {
   return (
