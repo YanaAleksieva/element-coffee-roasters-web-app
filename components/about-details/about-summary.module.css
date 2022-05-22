@@ -31,14 +31,38 @@
 }
 
 .contacts {
-  border-top: solid var(--primary-yellow) 5px;
-  border-bottom: solid var(--primary-yellow) 5px;
+  background: white;
+  padding: 25px 50px;
+  font-size: 1rem;
 }
 .contactsList {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
-  flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contactInfo {
+  text-decoration: none;
+  transition: transform 250ms ease-in-out;
+  display: inline-block;
+}
+.contactInfo:hover {
+  transform: translateY(-2px);
+}
+
+.instagram {
+  color: black;
+}
+
+.facebook {
+  color: #4968ad;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    margin: 32px;
+    flex-direction: column;
+  }
 }

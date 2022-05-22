@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Fragment } from "react";
 import DescriptionPage from "../layout/description-page";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import classes from "./about-summary.module.css";
 
@@ -23,7 +25,11 @@ const AboutSummary = () => {
           </div>
           <div className={classes.detail}>
             <p className={classes.textName}>Email адрес за запитвания: </p>
-            <p className={classes.textDetail}>elmntcoffee@gmail.com</p>
+            <p className={classes.textDetail}>
+              <Link href="mailto:elmntcoffee@gmail.com">
+                elmntcoffee@gmail.com
+              </Link>
+            </p>
           </div>
         </div>
         <div className={classes.section}>MAPS ADDED HERE</div>
@@ -46,8 +52,23 @@ const AboutSummary = () => {
       </DescriptionPage>
       <section className={classes.contacts}>
         <div className={classes.contactsList}>
-          <Link href="https://www.facebook.com/elmnt.roasters">Facebook</Link>
-          <Link href="mailto:elmntcoffee@gmail.com">Send a mail</Link>
+          <p className={classes.textDetail}>Намери ни в Социалните медии: </p>
+          <Link href="https://www.facebook.com/elmnt.roasters">
+            <a
+              className={`${classes.facebook} ${classes.contactInfo}`}
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/elmnt.roasters">
+            <a
+              className={`${classes.instagram} ${classes.contactInfo}`}
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+          </Link>
         </div>
       </section>
     </Fragment>

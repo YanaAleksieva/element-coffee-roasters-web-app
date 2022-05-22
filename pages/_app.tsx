@@ -4,6 +4,9 @@ import Layout from "../components/layout/layout";
 import { AnimatePresence } from "framer-motion";
 import Footer from "../components/layout/footer";
 import Head from "next/head";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
