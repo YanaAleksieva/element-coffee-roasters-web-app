@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "../ui/button";
 
@@ -38,15 +39,19 @@ const ProductItem = (props: Product) => {
   return (
     <li className={classes.item}>
       <div className={classes.itemImg}>
-        <Image
-          src={"/" + image}
-          alt={name}
-          layout="fill"
-          objectFit="cover"
-          priority
-          placeholder="blur"
-          blurDataURL={"/" + image}
-        />
+        <Link href={exploreLink} passHref>
+          <a>
+            <Image
+              src={"/" + image}
+              alt={name}
+              layout="fill"
+              objectFit="cover"
+              priority
+              placeholder="blur"
+              blurDataURL={"/" + image}
+            />
+          </a>
+        </Link>
       </div>
       <div className={classes.content}>
         <div className={classes.summary}>
