@@ -58,7 +58,7 @@ const ProductItem = (props: Product) => {
         </div>
         <div className={classes.spacer}></div>
         <div className={classes.actions}>
-          <Button link={exploreLink}>Детайли за продукта</Button>
+          <Button link={exploreLink}>Детайли</Button>
         </div>
       </div>
     </li>
