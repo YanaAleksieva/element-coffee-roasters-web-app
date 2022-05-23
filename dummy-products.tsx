@@ -11,7 +11,7 @@ const DUMMY_PRODUCTS = [
       "Цветни и лимонови нотки, деликатна киселинност с кремообразно шоколадово тяло. More description with great words for Costa Rica to be added later!",
     quantity: "200гр",
     price: "11",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/costa-rica.png",
     imageDetail: "images/labels/costaRica-photo.jpg",
     // location: "Africa",
   },
@@ -26,7 +26,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Плътно тяло и деликатна киселинност; сладък плодов аромат с много добър послевкус. More description with great words for El Salvador to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/el-salvador.png",
     price: "11",
     imageDetail: "images/labels/elSalvador-photo.jpg",
   },
@@ -42,7 +42,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Плътно меко тяло с деликатна и вкусна киселинност; с цветен привкус и нотки на мед, чай и тютюн. More description with great words for Ehiopia to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/ethiopia.png",
     price: "11",
     imageDetail: "images/labels/ethiopia-photo.jpg",
   },
@@ -58,7 +58,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Леки, но отчетливи шоколадови нотки с флорални привкус. More description with great words for Guatemala to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/guatemala.png",
     price: "11",
     imageDetail: "images/labels/guatemala-photo.jpg",
   },
@@ -73,7 +73,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Средно-плътно тяло с нотки на шоколад и ядки; балансирана киселинност с привкус на праскова и сини сливи. More description with great words for Honduras to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/honduras.png",
     price: "11",
     imageDetail: "images/labels/honduras-photo.jpg",
   },
@@ -88,7 +88,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Копринено тяло с отчетлива киселинност; билкови и плодови нотки, сладкък привкус. More description with great words for Kenya to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/kenya.png",
     price: "12",
     imageDetail: "images/labels/kenya-photo.jpg",
   },
@@ -103,7 +103,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Плътно тяло без киселинност; нотки на праскова и мед, с богат и запомнящ се послевкус. More description with great words for Mexico to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/mexico.png",
     price: "11",
     imageDetail: "images/labels/mexico-photo.jpg",
   },
@@ -118,7 +118,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Нотки на карамел, кафява захар, цитруси, и наситено тяло.. More description with great words for Nicaragua to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/nicaragua.png",
     price: "11",
     imageDetail: "images/labels/nicaragua-photo.jpg",
   },
@@ -133,7 +133,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Плътно тяло с плодови и шоколадови нотки; деликатен профил с лека киселинност и привкус на кайсия, портокал и шоколадов мус. More description with great words for Papua to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/papua.png",
     price: "11",
     imageDetail: "images/labels/papua-photo.jpg",
   },
@@ -148,7 +148,7 @@ const DUMMY_PRODUCTS = [
     description:
       "Плътно тяло, с нотки на какао и черен шоколад. Лека киселинност, земен привкус съчетан с приятен мирис на печени ядки и кедър. More description with great words for Sumatra to be added later!",
     quantity: "200гр",
-    image: "images/coffee-package-basic.png",
+    image: "images/packages/sumatra.png",
     price: "11",
     imageDetail: "images/labels/sumatra-photo.jpg",
   },

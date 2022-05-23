@@ -44,6 +44,8 @@ const ProductItem = (props: Product) => {
           layout="fill"
           objectFit="cover"
           priority
+          placeholder="blur"
+          blurDataURL={"/" + image}
         />
       </div>
       <div className={classes.content}>

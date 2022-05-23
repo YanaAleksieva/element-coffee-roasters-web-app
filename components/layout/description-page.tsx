@@ -19,6 +19,8 @@ const DescriptionPage = (props: DescriptionProps) => {
           layout="fill"
           objectFit="scale-down"
           priority
+          placeholder="blur"
+          blurDataURL={props.imgUrl}
         />
       </div>
     </div>
