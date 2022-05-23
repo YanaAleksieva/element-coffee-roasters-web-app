@@ -41,6 +41,8 @@ function ProductSummary(props: Product) {
           alt={title}
           layout="fill"
           objectFit="cover"
+          placeholder="blur"
+          blurDataURL={`/${image}`}
           priority
         />
       </div>
