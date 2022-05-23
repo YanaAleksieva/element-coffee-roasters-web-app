@@ -12,7 +12,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     price: "11",
     image: "images/coffee-package-basic.png",
-    imageDetail: "images/labels/costaRica-photo.png",
+    imageDetail: "images/labels/costaRica-photo.jpg",
     // location: "Africa",
   },
   {
@@ -28,7 +28,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/elSalvador-photo.png",
+    imageDetail: "images/labels/elSalvador-photo.jpg",
   },
 
   {
@@ -44,7 +44,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/ethiopia-photo.png",
+    imageDetail: "images/labels/ethiopia-photo.jpg",
   },
 
   {
@@ -60,7 +60,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/guatemala-photo.png",
+    imageDetail: "images/labels/guatemala-photo.jpg",
   },
   {
     id: "p5",
@@ -75,7 +75,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/honduras-photo.png",
+    imageDetail: "images/labels/honduras-photo.jpg",
   },
   {
     id: "p6",
@@ -90,7 +90,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "12",
-    imageDetail: "images/labels/kenya-photo.png",
+    imageDetail: "images/labels/kenya-photo.jpg",
   },
   {
     id: "p7",
@@ -105,7 +105,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/mexico-photo.png",
+    imageDetail: "images/labels/mexico-photo.jpg",
   },
   {
     id: "p8",
@@ -120,7 +120,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/nicaragua-photo.png",
+    imageDetail: "images/labels/nicaragua-photo.jpg",
   },
   {
     id: "p9",
@@ -135,7 +135,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/papua-photo.png",
+    imageDetail: "images/labels/papua-photo.jpg",
   },
   {
     id: "p10",
@@ -150,7 +150,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/coffee-package-basic.png",
     price: "11",
-    imageDetail: "images/labels/sumatra-photo.png",
+    imageDetail: "images/labels/sumatra-photo.jpg",
   },
 ];
 

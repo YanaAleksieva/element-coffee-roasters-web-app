@@ -17,7 +17,7 @@ const OrderPage: NextPage = () => {
         />
       </Head>
       <DescriptionPage
-        imgUrl={"/images/cover-wider.png"}
+        imgUrl={"/images/cover-wider.jpg"}
         imgAlt={"coffee-shop-photo"}
       >
         За да поръчате, моля обадете се на посочения номер в секцията ЗА НАС
