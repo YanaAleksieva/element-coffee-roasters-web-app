@@ -35,6 +35,7 @@
   color: white;
   text-shadow: 2px 2px black;
   text-align: center;
+  z-index: 2;
 }
 
 .embla__slide__text p {

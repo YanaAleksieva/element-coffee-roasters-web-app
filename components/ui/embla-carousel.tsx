@@ -8,6 +8,7 @@ import { PrevButton, NextButton } from "./embla-carousel-button";
 import { mediaByIndex } from "../../public/images/carousel";
 
 import classes from "./embla-carousel.module.css";
+import Button from "./button";
 
 type Carousel = {
   slides: number[];
@@ -68,12 +69,14 @@ const EmblaCarousel = (props: Carousel) => {
                     врата
                   </p>
                   <h2>Кафе пекарна в Стара Загора</h2>
+                  <Button link="/products/">Продукти</Button>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+
       <EmblaCarouselDots
         scrollSnaps={scrollSnaps}
         selectedIndex={selectedIndex}
