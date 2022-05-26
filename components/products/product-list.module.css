@@ -6,8 +6,17 @@
   max-width: 1100px;
 }
 
+.list::after {
+  content: "";
+  flex-basis: 285px;
+}
+
 @media (max-width: 768px) {
   .list {
     justify-content: center;
+  }
+  .list::after {
+    content: "";
+    flex-basis: auto;
   }
 }
