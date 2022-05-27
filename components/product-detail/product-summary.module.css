@@ -5,7 +5,6 @@
   display: flex;
   gap: 5rem;
   flex-direction: column;
-  align-items: center;
 }
 
 .image {
@@ -24,8 +23,14 @@
   margin: 0;
   font-size: 1rem;
 }
+
+.summary h4 {
+  margin: 6px 0 6px 0;
+}
+
 .summary p {
   font-size: 1rem;
+  margin: 6px 0 6px 0;
 }
 
 .summary__basic_info {
@@ -41,7 +46,7 @@
 .summary__spec_item {
   display: flex;
   align-items: baseline;
-  gap: 1rem;
+  gap: 6px;
 }
 
 .summary__description {
@@ -57,6 +62,15 @@
   }
   .summary p {
     font-size: 1rem;
+  }
+
+  .summary h4 {
+    margin: 12px 0 12px 0;
+  }
+
+  .summary p {
+    font-size: 1rem;
+    margin: 12px 0 12px 0;
   }
 
   .summary {
