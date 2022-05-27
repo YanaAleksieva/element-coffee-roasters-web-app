@@ -74,3 +74,18 @@
     rgba(0, 0, 0, 0.36)
   );
 }
+
+@media (max-width: 768px) {
+  .embla__slide__text p {
+    font-size: 1em;
+    font-weight: 200;
+    padding: 0 1em 0 1em;
+  }
+  
+  .embla__slide__text h2 {
+    font-size: 2em;
+    font-weight: 500;
+    color: inherit;
+    padding: 0 2em 0 2em;
+  }
+}

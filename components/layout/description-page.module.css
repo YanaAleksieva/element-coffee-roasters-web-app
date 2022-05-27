@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 24px;
+  width: 80%;
 }
 
 .text {
@@ -17,12 +19,28 @@
   height: 400px;
 }
 
-@media (max-width: 1100px) {
+
+@media (max-width: 820px) {
   .container {
     margin: 32px;
   }
   .image {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+
+@media (max-width: 598px) {
+  .image {
     width: 400px;
     height: 200px;
+  }
+}
+
+@media (max-width: 398px) {
+  .image {
+    width: 280px;
+    height: 140px;
   }
 }
