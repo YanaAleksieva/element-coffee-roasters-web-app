@@ -1,3 +1,7 @@
 .active {
   border-bottom: 1px solid var(--primary-yellow);
 }
+
+.list {
+  width: 100%;
+}

@@ -7,7 +7,7 @@ const HeaderLinks = () => {
   const router = useRouter();
 
   return (
-    <ul>
+    <ul className={classes.list}>
       <li className={`${router.pathname == "/products" ? classes.active : ""}`}>
         <Link href="/products">ПРОДУКТИ</Link>
       </li>
