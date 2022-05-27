@@ -13,7 +13,7 @@ const ProductLogisticsGrinding = (props: IconSet) => {
 
   return (
     <div className={classes.grinding__info}>
-      <p>Смляно за</p>
+      <p className={classes.grinding__text}>Смляно за</p>
       {icons.map((index) => (
         <div className={classes.grinding__slide} key={index}>
           <Image

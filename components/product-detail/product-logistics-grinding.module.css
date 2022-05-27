@@ -1,6 +1,7 @@
 .grinding__info {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   margin-top: 2rem;
@@ -12,6 +13,41 @@
   height: 40px;
 }
 
-.p {
-  font-size: 3rem;
+.grinding__text {
+  width: 100px;
+  text-align: center;
+}
+
+.grinding__info::after {
+  content: "";
+  flex-basis: auto;
+}
+
+@media (max-width: 912px) {
+  .grinding__text {
+    text-align: left;
+  }
+  .grinding__info {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .grinding__text {
+    width: 500px;
+    text-align: center;
+  }
+  .grinding__info {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 512px) {
+  .grinding__text {
+    width: 200px;
+    text-align: center;
+  }
+  .grinding__info {
+    justify-content: space-between;
+  }
 }

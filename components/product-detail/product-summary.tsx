@@ -46,7 +46,7 @@ function ProductSummary(props: Product) {
           priority
         />
       </div>
-      <div>
+      <div className={classes.summary__description}>
         <div className={classes.summary__basic_info}>
           <h2>{title}</h2>
           <h3>{flavourProfile}</h3>
