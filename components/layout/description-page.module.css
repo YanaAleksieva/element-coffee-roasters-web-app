@@ -37,6 +37,9 @@
     width: 400px;
     height: 200px;
   }
+  .text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 398px) {
