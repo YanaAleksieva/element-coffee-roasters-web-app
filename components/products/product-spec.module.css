@@ -4,13 +4,6 @@
   margin: 3rem auto;
 }
 
-.icon {
-  height: 60px;
-  width: 50px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .iconRow {
   display: flex;
   justify-content: space-between;
@@ -27,8 +20,26 @@
   margin: 0 20px;
 }
 
+.icon {
+  height: 60px;
+  width: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .specText {
   color: black;
   font-size: 14px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .iconRow {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .specText {
+    font-size: 12px;
+    width: 8rem;
+  }
 }

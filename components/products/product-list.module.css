@@ -11,7 +11,7 @@
   flex-basis: 285px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
   .list {
     justify-content: center;
   }

@@ -9,7 +9,6 @@
 
 .itemImg {
   position: relative;
-  width: inherit;
   height: 340px;
   background-color: var(--primary-background);
 }
