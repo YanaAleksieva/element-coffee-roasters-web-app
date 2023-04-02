@@ -213,7 +213,7 @@ const DUMMY_PRODUCTS = [
     quantity: "200гр",
     image: "images/packages/base-package.png",
     price: "12",
-    imageDetail: "images/labels/rwanda-basic-photo.png",
+    imageDetail: "images/labels/rwanda-basic-photo.jpg",
   },
 ];
 

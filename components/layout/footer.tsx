@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           in Stara Zagora, Bulgaria
         </div>
-        <div className={classes.copyright}>Element Coffee Roasters / 2022</div>
+        <div className={classes.copyright}>Element Coffee Roasters / 2023</div>
       </div>
     </footer>
   );
