@@ -200,6 +200,21 @@ const DUMMY_PRODUCTS = [
     price: "12",
     imageDetail: "images/labels/columbia-photo.jpg",
   },
+  {
+    id: "p12",
+    name: "Rwanda - Ishema",
+    origin: "Gasetsa, Ngoma District",
+    altitude: "1500м",
+    varietal: "Bourbon",
+    process: "Washed",
+    flavourProfile: "Плодов. Сливи и круши.",
+    description:
+      "Вкусът е чист и добре балансиран. Усезаема киселинност с дълъг, сладък плодов послевкус.",
+    quantity: "200гр",
+    image: "images/packages/base-package.png",
+    price: "12",
+    imageDetail: "images/labels/rwanda-basic-photo.png",
+  },
 ];
 
 /*
