@@ -30,7 +30,6 @@ const DUMMY_PRODUCTS = [
   //   price: "12",
   //   imageDetail: "images/labels/ethiopia-photo.jpg",
   // },
-<<<<<<< HEAD
   // {
   //   id: "p3",
   //   name: "Honduras",
@@ -46,23 +45,6 @@ const DUMMY_PRODUCTS = [
   //   price: "12",
   //   imageDetail: "images/labels/honduras-photo.jpg",
   // },
-=======
-  {
-    id: "p3",
-    name: "Honduras",
-    origin: "San Pedro de Capucas, Copan",
-    altitude: "1200-1600м",
-    varietal: "Caturra, Bourbon",
-    process: "Washed",
-    flavourProfile: "Шоколад. Ядки. Ванилия.",
-    description:
-      "Средно-плътно тяло с нотки на шоколад и ядки; балансирана киселинност с привкус на праскова и сини сливи. Кафето от регион Копан се характеризира с шоколадов привкус, ванилия и леки нотки на плодове и ядки, мека киселинност и силен аромат.",
-    quantity: "200гр",
-    image: "images/packages/honduras.png",
-    price: "13",
-    imageDetail: "images/labels/honduras-photo.jpg",
-  },
->>>>>>> a70f13160eae0b4758a6b728060eb73fc8f8b7c7
   // {
   //   id: "p4",
   //   name: "Kanya AA",
@@ -218,7 +200,6 @@ const DUMMY_PRODUCTS = [
     price: "13",
     imageDetail: "images/labels/columbia-photo.jpg",
   },
-<<<<<<< HEAD
   // {
   //   id: "p12",
   //   name: "Rwanda - Ishema",
@@ -231,26 +212,9 @@ const DUMMY_PRODUCTS = [
   //     "Вкусът е чист и добре балансиран. Усезаема киселинност с дълъг, сладък плодов послевкус.",
   //   quantity: "200гр",
   //   image: "images/packages/base-package.png",
-  //   price: "12",
+  //   price: "13",
   //   imageDetail: "images/labels/rwanda-basic-photo.jpg",
   // },
-=======
-  {
-    id: "p12",
-    name: "Rwanda - Ishema",
-    origin: "Gasetsa, Ngoma District",
-    altitude: "1500м",
-    varietal: "Bourbon",
-    process: "Washed",
-    flavourProfile: "Плодов. Сливи и круши.",
-    description:
-      "Вкусът е чист и добре балансиран. Усезаема киселинност с дълъг, сладък плодов послевкус.",
-    quantity: "200гр",
-    image: "images/packages/base-package.png",
-    price: "13",
-    imageDetail: "images/labels/rwanda-basic-photo.jpg",
-  },
->>>>>>> a70f13160eae0b4758a6b728060eb73fc8f8b7c7
 ];
 
 /*
