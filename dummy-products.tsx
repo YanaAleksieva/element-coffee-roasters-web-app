@@ -30,21 +30,21 @@ const DUMMY_PRODUCTS = [
   //   price: "12",
   //   imageDetail: "images/labels/ethiopia-photo.jpg",
   // },
-  {
-    id: "p3",
-    name: "Honduras",
-    origin: "San Pedro de Capucas, Copan",
-    altitude: "1200-1600м",
-    varietal: "Caturra, Bourbon",
-    process: "Washed",
-    flavourProfile: "Шоколад. Ядки. Ванилия.",
-    description:
-      "Средно-плътно тяло с нотки на шоколад и ядки; балансирана киселинност с привкус на праскова и сини сливи. Кафето от регион Копан се характеризира с шоколадов привкус, ванилия и леки нотки на плодове и ядки, мека киселинност и силен аромат.",
-    quantity: "200гр",
-    image: "images/packages/honduras.png",
-    price: "12",
-    imageDetail: "images/labels/honduras-photo.jpg",
-  },
+  // {
+  //   id: "p3",
+  //   name: "Honduras",
+  //   origin: "San Pedro de Capucas, Copan",
+  //   altitude: "1200-1600м",
+  //   varietal: "Caturra, Bourbon",
+  //   process: "Washed",
+  //   flavourProfile: "Шоколад. Ядки. Ванилия.",
+  //   description:
+  //     "Средно-плътно тяло с нотки на шоколад и ядки; балансирана киселинност с привкус на праскова и сини сливи. Кафето от регион Копан се характеризира с шоколадов привкус, ванилия и леки нотки на плодове и ядки, мека киселинност и силен аромат.",
+  //   quantity: "200гр",
+  //   image: "images/packages/honduras.png",
+  //   price: "12",
+  //   imageDetail: "images/labels/honduras-photo.jpg",
+  // },
   // {
   //   id: "p4",
   //   name: "Kanya AA",
@@ -200,21 +200,21 @@ const DUMMY_PRODUCTS = [
     price: "12",
     imageDetail: "images/labels/columbia-photo.jpg",
   },
-  {
-    id: "p12",
-    name: "Rwanda - Ishema",
-    origin: "Gasetsa, Ngoma District",
-    altitude: "1500м",
-    varietal: "Bourbon",
-    process: "Washed",
-    flavourProfile: "Плодов. Сливи и круши.",
-    description:
-      "Вкусът е чист и добре балансиран. Усезаема киселинност с дълъг, сладък плодов послевкус.",
-    quantity: "200гр",
-    image: "images/packages/base-package.png",
-    price: "12",
-    imageDetail: "images/labels/rwanda-basic-photo.jpg",
-  },
+  // {
+  //   id: "p12",
+  //   name: "Rwanda - Ishema",
+  //   origin: "Gasetsa, Ngoma District",
+  //   altitude: "1500м",
+  //   varietal: "Bourbon",
+  //   process: "Washed",
+  //   flavourProfile: "Плодов. Сливи и круши.",
+  //   description:
+  //     "Вкусът е чист и добре балансиран. Усезаема киселинност с дълъг, сладък плодов послевкус.",
+  //   quantity: "200гр",
+  //   image: "images/packages/base-package.png",
+  //   price: "12",
+  //   imageDetail: "images/labels/rwanda-basic-photo.jpg",
+  // },
 ];
 
 /*
